@@ -1,0 +1,23 @@
+body {
+    background-color: #303030;
+    margin: 0;
+}
+header {
+    background-color: #222;
+    padding: 10px 0 5px;
+    text-align: center;
+    box-shadow: 0 0 30px #444;
+    /*margin-top: -20px;*/
+    position: fixed;
+}
+header > img {
+    width: 30%;
+}
+.game-item {
+    background-color: #222;
+    width: 96%;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 2%;
+    border-radius: 10px;
+}
