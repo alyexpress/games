@@ -41,6 +41,21 @@
         height: 200px;
         transition-delay: .2s;
     }
+    .notifications {
+        text-align: center;
+        width: 100%;
+        margin-left: -10px;
+        position: fixed;
+        bottom: -30px;
+        font-family: Arial;
+        color: red;
+        font-size: 30px;
+        transition: .2s;
+    }
+    #img:active ~ .notifications {
+        bottom: 25px;
+        transition-delay: .2s;
+    }
     .hidden {
         top: -1500px;
         transition: 1s;
@@ -60,6 +75,7 @@
     <img src="logo.png" alt="logo" id="img" draggable="false" oncontextmenu='return false;'>
     <span class="circle"></span>
     <img src="logo.png" alt="logo" class="img" draggable="false" oncontextmenu='return false;'>
+    <div class="notifications"><span>2 новых</span></div>
     <script>
         img.onclick = function () {
             img.classList.add("hidden");
